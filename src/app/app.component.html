@@ -1,0 +1,11 @@
+<div class="container">
+  <angular-editor [(ngModel)]="htmlContent" [config]="config"></angular-editor>
+
+  <h4>HTML Output</h4>
+  <div class="html">
+    {{ htmlContent }}
+  </div>
+
+  <h4>Actual Output</h4>
+  <div [innerHTML]="htmlContent"></div>
+</div>
